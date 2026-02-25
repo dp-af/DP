@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PDF-Ansicht (Mobil optimiert – immer neuer Tab)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>📄 Dienstplan</h1>
+    <p class="subtitle">PDF wird auf Mobilgeräten immer in einem neuen Tab geöffnet.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>PDF öffnen</h2>
+      <p>
+        <a class="btn" href="files/dienstplan.pdf" target="_blank" rel="noopener">PDF im neuen Tab anzeigen</a>
+      </p>
+      <p class="hint">Ersetze die Datei <code>files/dienstplan.pdf</code> durch deinen echten Dienstplan (Dateiname beibehalten).</p>
+    </section>
+
+    <section class="card">
+      <h3>Weitere PDFs (optional)</h3>
+      <ul class="links">
+        <li><a href="files/dienstplan.pdf" target="_blank" rel="noopener">Dienstplan (aktuell)</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> PDF-Seite</small>
+  </footer>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
